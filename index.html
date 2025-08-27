@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -14,22 +15,32 @@
       overflow-x: hidden;
     }
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: 30px auto;
+      padding: 20px;
+    }
+    h1 {
+      color: #6d6875;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    h2 {
+      color: #6d6875;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #b5838d;
+      padding-bottom: 5px;
+    }
+    .card {
       background: #fff;
       border-radius: 15px;
-      box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
-      padding: 40px;
+      box-shadow: 0px 6px 15px rgba(0,0,0,0.1);
+      padding: 25px;
+      margin-bottom: 25px;
       animation: fadeIn 1s ease-in;
     }
     @keyframes fadeIn {
       from {opacity: 0; transform: translateY(20px);}
       to {opacity: 1; transform: translateY(0);}
-    }
-    h1, h2 {
-      color: #6d6875;
-      text-align: center;
-      animation: fadeIn 1.2s ease-in;
     }
     .header {
       text-align: center;
@@ -43,19 +54,9 @@
       border: 4px solid #b5838d;
       animation: fadeIn 1.5s ease-in;
     }
-    .section {
-      margin-bottom: 25px;
-      animation: fadeIn 1.5s ease-in;
-    }
-    .section h2 {
-      border-bottom: 2px solid #b5838d;
-      padding-bottom: 6px;
-      margin-bottom: 12px;
-      font-size: 1.3em;
-    }
     p {
       line-height: 1.6;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
     a {
       color: #b5838d;
@@ -65,42 +66,57 @@
     a:hover {
       color: #6d6875;
     }
+    .contact a {
+      display: inline-block;
+      margin-right: 15px;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- Encabezado con tu foto -->
+
+    <!-- Encabezado -->
     <div class="header">
       <img src="foto.jpg" alt="Foto de perfil">
       <h1>Melany Campo</h1>
-      <p>Email: <a href="mailto:melanycampo24@gmail.com">melanycampo24@gmail.com</a></p>
-      <p>Teléfono: <a href="tel:+573001234567">+57 300 123 4567</a></p>
+      <p>¡Hola! Bienvenido a mi hoja de vida.</p>
     </div>
 
     <!-- Educación -->
-    <div class="section">
+    <div class="card">
       <h2>Educación</h2>
       <p>Actualmente curso Bachillerato y estoy realizando formación técnica en Asistencia Administrativa en el SENA. También he tomado cursos de inglés a través de SENA Virtual.</p>
     </div>
 
     <!-- Experiencia -->
-    <div class="section">
+    <div class="card">
       <h2>Experiencia</h2>
       <p>He participado en prácticas empresariales, incluyendo la venta de productos como arroz con leche y otros en desarrollo, lo que me ha permitido adquirir experiencia en atención al cliente y gestión de ventas.</p>
     </div>
 
     <!-- Habilidades -->
-    <div class="section">
+    <div class="card">
       <h2>Habilidades</h2>
-      <p>Me destaco por trabajar en equipo, mantener una organización administrativa eficiente, asumir responsabilidad y compromiso en mis tareas, y comunicarme de manera efectiva.</p>
+      <p>Trabajo en equipo, organización administrativa, responsabilidad y compromiso, y comunicación efectiva.</p>
     </div>
 
     <!-- Intereses -->
-    <div class="section">
+    <div class="card">
       <h2>Intereses</h2>
-      <p>Me interesa el desarrollo empresarial, la administración, la atención al cliente y el aprendizaje continuo, siempre buscando mejorar mis conocimientos y habilidades.</p>
+      <p>Desarrollo empresarial, administración, atención al cliente y aprendizaje continuo.</p>
     </div>
+
+    <!-- Contáctame -->
+    <div class="card contact">
+      <h2>Contáctame</h2>
+      <p>Email: <a href="mailto:melanycampo24@gmail.com">melanycampo24@gmail.com</a></p>
+      <p>Teléfono: <a href="tel:+573001234567">+57 300 123 4567</a></p>
+      <!-- Si quieres agregar redes sociales, solo copia y pega otra línea de <a> -->
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/tu-perfil" target="_blank">mi perfil</a></p>
+    </div>
+
   </div>
 </body>
 </html>
+
 
