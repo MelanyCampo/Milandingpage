@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -8,111 +9,138 @@
   <style>
     body {
       font-family: 'Arial', sans-serif;
-      background: linear-gradient(120deg, #fdf6f0, #ffe4e1);
+      background: #f9f9f9;
       margin: 0;
       padding: 0;
       color: #333;
     }
 
+    /* NAVBAR */
+    header {
+      background: #1a2a40;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #ffd6d6;
+    }
+
+    /* CONTENEDOR */
     .container {
       max-width: 900px;
       margin: 30px auto;
       padding: 20px;
     }
 
-    h1 {
-      color: #6d6875;
+    /* HERO - Foto + nombre */
+    .hero {
       text-align: center;
-      margin-bottom: 5px;
+      padding: 40px 20px;
     }
-
-    h2 {
-      color: #6d6875;
-      margin-top: 30px;
-      border-bottom: 2px solid #b5838d;
-      padding-bottom: 5px;
-    }
-
-    .card {
-      background: #fff;
-      border-radius: 15px;
-      box-shadow: 0px 6px 15px rgba(0,0,0,0.1);
-      padding: 25px;
-      margin-bottom: 25px;
-      animation: fadeIn 1s ease-in;
-    }
-
-    @keyframes fadeIn {
-      from {opacity: 0; transform: translateY(20px);}
-      to {opacity: 1; transform: translateY(0);}
-    }
-
-    .header {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .header img {
+    .hero img {
       width: 140px;
       height: 140px;
       border-radius: 50%;
       object-fit: cover;
-      border: 4px solid #b5838d;
+      border: 4px solid #1a2a40;
+      margin-bottom: 15px;
+    }
+    .hero h1 {
+      margin: 0;
+      font-size: 28px;
+      color: #1a2a40;
     }
 
-    .section {
-      margin-bottom: 20px;
+    /* SECCIONES */
+    h2 {
+      color: #1a2a40;
+      margin-top: 30px;
+      border-bottom: 2px solid #ffd6d6;
+      padding-bottom: 5px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 25px;
+      animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
     }
 
     p {
       line-height: 1.6;
       margin-bottom: 10px;
     }
-
     a {
-      color: #b5838d;
+      color: #1a2a40;
       text-decoration: none;
     }
-
     a:hover {
-      color: #6d6875;
+      text-decoration: underline;
     }
 
-    .contact a {
-      display: inline-block;
-      margin-right: 15px;
-    }
-
-    strong {
-      color: #444;
+    /* FOOTER */
+    footer {
+      background: #1a2a40;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav>
+      <a href="#contacto">Contacto</a>
+      <a href="#perfil">Perfil</a>
+      <a href="#educacion">Educación</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#intereses">Intereses</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <img src="foto.jpg" alt="Foto de perfil" />
+    <h1>Melany Campo</h1>
+  </section>
+
   <div class="container">
-
-    <!-- Encabezado con foto y nombre -->
-    <div class="header">
-      <img src="foto.jpg" alt="Foto de perfil" />
-      <h1>Melany Campo</h1>
-    </div>
-
     <!-- Información de Contacto -->
-    <div class="card section contact">
+    <div id="contacto" class="card">
       <h2>1. Información de Contacto</h2>
       <p><strong>Email:</strong> <a href="mailto:melanycampo24@gmail.com">melanycampo24@gmail.com</a></p>
       <p><strong>Teléfono:</strong> <a href="tel:+573001234567">+57 300 123 4567</a></p>
       <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/melanycampo" target="_blank">linkedin.com/in/melanycampo</a></p>
     </div>
 
-    <!-- Presentación -->
-    <div class="card section">
+    <!-- Perfil Profesional -->
+    <div id="perfil" class="card">
       <h2>2. Perfil Profesional</h2>
       <p>Soy una estudiante de bachillerato con formación técnica en Asistencia Administrativa. Me caracterizo por ser responsable, organizada y comprometida. Tengo habilidades en atención al cliente, trabajo en equipo y comunicación efectiva. Busco seguir aprendiendo y creciendo en el ámbito administrativo y empresarial.</p>
     </div>
 
     <!-- Educación -->
-    <div class="card section">
+    <div id="educacion" class="card">
       <h2>3. Educación</h2>
       <p><strong>Institución:</strong> CASD José Prudencio Padilla</p>
       <p><strong>Programa:</strong> Bachillerato en curso</p>
@@ -121,26 +149,15 @@
     </div>
 
     <!-- Experiencia -->
-    <div class="card section">
+    <div id="experiencia" class="card">
       <h2>4. Experiencia</h2>
       <p>He realizado prácticas empresariales en ventas de productos como arroz con leche, desarrollando habilidades en atención al cliente, gestión de ventas y trabajo bajo presión.</p>
     </div>
 
     <!-- Habilidades -->
-    <div class="card section">
+    <div id="habilidades" class="card">
       <h2>5. Habilidades</h2>
       <p>✔ Trabajo en equipo</p>
       <p>✔ Organización administrativa</p>
       <p>✔ Responsabilidad y compromiso</p>
-      <p>✔ Comunicación efectiva</p>
-    </div>
-
-    <!-- Intereses -->
-    <div class="card section">
-      <h2>6. Intereses</h2>
-      <p>Me interesa el desarrollo empresarial, la administración, la atención al cliente y el aprendizaje continuo. Siempre estoy en búsqueda de oportunidades para crecer y mejorar mis conocimientos.</p>
-    </div>
-
-  </div>
-</body>
-</html>
+      <p>✔ Comunicación efec
