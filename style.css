@@ -5,6 +5,9 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* NAVBAR */
@@ -15,7 +18,7 @@ header {
   text-align: center;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
 }
 nav a {
   color: white;
@@ -33,6 +36,7 @@ nav a:hover {
   max-width: 900px;
   margin: 30px auto;
   padding: 20px;
+  flex: 1;
 }
 
 /* HERO - Foto + nombre */
@@ -112,11 +116,62 @@ form button:hover {
   background: #d94f70;
 }
 
+/* Habilidades en óvalos */
+.habilidades-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+.habilidades-lista span {
+  background: #a8dadc; /* color pastel */
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #1d3557;
+  font-weight: bold;
+}
+
+/* Redes con foto y botones */
+.redes-card {
+  text-align: center;
+}
+.perfil-redes {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 10px 0;
+}
+.redes-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+.redes-links a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #f1faee;
+  border: 2px solid #457b9d;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #1d3557;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.redes-links a:hover {
+  background: #a8dadc;
+  color: #fff;
+}
+
 /* FOOTER */
 footer {
-  background: #f8b6c1;
-  color: white;
+  background: #1d3557;
+  color: #f1faee;
   text-align: center;
   padding: 10px;
-  margin-top: 40px;
+  margin-top: 20px;
+  font-size: 14px;
 }
+
