@@ -1,94 +1,123 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hoja de Vida - Melany Campo</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Asimovian&family=Roboto+Slab:wght@100..900&display=swap');
+</style>
+    <title>Hoja de Vida - Melany Campo</title>
+    <link rel="stylesheet" href="./Style.css">
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <header>
-    <nav>
-      <a href="#inicio">Inicio</a>
-      <a href="#redes">Mis Redes</a>
-      <a href="#contacto">Contáctame</a>
-    </nav>
-  </header>
+    <header class="header">
+        <nav class="nav">
+            <details class="accordion-nav">
+                <summary class="nav-link">Menú</summary>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="#linktree" class="nav-link">Mis Redes</a></li>
+                    <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </details>
+        </nav>
+    </header>
 
-  <!-- HERO -->
-  <section id="inicio" class="hero">
-    <img src="foto.jpg" alt="Foto de perfil" />
-    <h1>Melany Campo</h1>
-    <p>
-      Estudiante de bachillerato con formación técnica en Asistencia Administrativa. 
-      Soy responsable, organizada y comprometida, con habilidades en atención al cliente, 
-      trabajo en equipo y comunicación efectiva.
-    </p>
-  </section>
+    <section id="inicio" class="section profile-section">
+        <div class="profile-container">
+            <img src="./foto.jpg" alt="Foto de perfil" class="profile-photo">
+            <h1 class="profile-name">Melany Campo</h1>
+            <p class="profile-summary">
+                Estudiante de bachillerato con formación técnica en Asistencia Administrativa. 
+                Soy responsable, organizada y comprometida, con habilidades en atención al cliente, 
+                trabajo en equipo y comunicación efectiva.
+            </p>
+            <div class="contact-info">
+                <p><strong>Correo:</strong> <a href="mailto:melanycampo24@gmail.com">melanycampo24@gmail.com</a></p>
+                <p><strong>Teléfono:</strong> <a href="http://wa.me/+573001234567" target="_blank" rel="noopener noreferrer">+57 300 123 4567</a></p>
+            </div>
+        </div>
+    </section>
 
-  <div class="container">
-    <!-- Educación -->
-    <div id="educacion" class="card">
-      <h2>Educación</h2>
-      <p><strong>Institución:</strong> CASD José Prudencio Padilla</p>
-      <p><strong>Programa:</strong> Bachillerato en curso</p>
-      <p><strong>Formación Técnica:</strong> Asistencia Administrativa (SENA)</p>
-      <p><strong>Otros cursos:</strong> Inglés (SENA Virtual)</p>
-    </div>
+    <section class="section">
+        <h2 class="section-title">Estudios y Experiencia</h2>
+        <div class="section-content">
+            <h3>Estudios Realizados</h3>
+            <ul class="list">
+                <li>
+                    <h4>CASD José Prudencio Padilla</h4>
+                    <p>Bachillerato en curso</p>
+                </li>
+                <li>
+                    <h4>SENA</h4>
+                    <p>Técnico en Asistencia Administrativa</p>
+                    <p>Otros cursos: Inglés (SENA Virtual)</p>
+                </li>
+            </ul>
 
-    <!-- Experiencia -->
-    <div id="experiencia" class="card">
-      <h2>Experiencia</h2>
-      <p>He realizado prácticas empresariales en ventas de productos como arroz con leche, 
-      desarrollando habilidades en atención al cliente, gestión de ventas y trabajo bajo presión.</p>
-    </div>
+            <h3>Experiencia</h3>
+            <ul class="list">
+                <li>
+                    <h4>Prácticas Empresariales</h4>
+                    <p>Venta de productos como arroz con leche. 
+                    Desarrollé habilidades en atención al cliente, gestión de ventas y trabajo bajo presión.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
 
-    <!-- Habilidades -->
-    <div id="habilidades" class="card">
-      <h2>Habilidades</h2>
-      <p>✔ Trabajo en equipo</p>
-      <p>✔ Organización administrativa</p>
-      <p>✔ Responsabilidad y compromiso</p>
-      <p>✔ Comunicación efectiva</p>
-    </div>
+    <section class="section skills-section">
+        <h2 class="section-title">Habilidades</h2>
+        <div class="skills-container">
+            <div class="skill-group">
+                <h3>Habilidades Técnicas</h3>
+                <ul class="list-inline">
+                    <li>Organización administrativa</li>
+                    <li>Atención al cliente</li>
+                </ul>
+            </div>
+            <div class="skill-group">
+                <h3>Habilidades Blandas</h3>
+                <ul class="list-inline">
+                    <li>Trabajo en Equipo</li>
+                    <li>Responsabilidad y compromiso</li>
+                    <li>Comunicación efectiva</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-    <!-- Intereses -->
-    <div id="intereses" class="card">
-      <h2>Intereses</h2>
-      <p>Me interesa el desarrollo empresarial, la administración, la atención al cliente 
-      y el aprendizaje continuo. Siempre estoy en búsqueda de oportunidades para crecer 
-      y mejorar mis conocimientos.</p>
-    </div>
+    <section id="linktree" class="section linktree-section">
+        <h2 class="section-title">Mis Redes</h2>
+        <div class="linktree-container">
+            <img src="./foto.jpg" alt="Foto de perfil" class="profile-photo">
+            <a href="mailto:melanycampo24@gmail.com" target="_blank" class="linktree-link"><strong>Email</strong></a>
+            <a href="tel:+573001234567" target="_blank" class="linktree-link"><strong>Teléfono</strong></a>
+            <a href="https://www.linkedin.com/in/melanycampo" target="_blank" class="linktree-link"><strong>LinkedIn</strong></a>
+        </div>
+    </section>
 
-    <!-- Redes -->
-    <div id="redes" class="card">
-      <h2>Mis Redes</h2>
-      <p><strong>Email:</strong> <a href="mailto:melanycampo24@gmail.com">melanycampo24@gmail.com</a></p>
-      <p><strong>Teléfono:</strong> <a href="tel:+573001234567">+57 300 123 4567</a></p>
-      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/melanycampo" target="_blank">linkedin.com/in/melanycampo</a></p>
-    </div>
+    <section id="contacto" class="section contact-section">
+        <h2 class="section-title">Contáctame</h2>
+        <form action="https://formspree.io/f/tu-email-de-formspree" method="POST" class="contact-form">
+            <input type="text" name="nombre" placeholder="Tu Nombre" required>
+            <input type="email" name="_replyto" placeholder="Tu Correo Electrónico" required>
+            <textarea name="mensaje" placeholder="Tu Mensaje" rows="5" required></textarea>
+            <button type="submit" class="submit-button">Enviar Mensaje</button>
+        </form>
+    </section>
 
-    <!-- Formulario de Contacto -->
-    <div id="contacto" class="card">
-      <h2>Contáctame</h2>
-      <form>
-        <input type="text" placeholder="Tu nombre" required>
-        <input type="email" placeholder="Tu correo electrónico" required>
-        <textarea rows="5" placeholder="Escribe tu mensaje" required></textarea>
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
-  </div>
+    <footer class="footer">
+        <p>&copy; 2025 Melany Campo <br> Todos los derechos reservados.</p>
+        <p>Desde el ❤️ del CASD para todo el mundo</p>
+    </footer>
 
-  <footer>
-  <p>© 2025 - Todos los derechos reservados | Desde el corazón del CASD para todo el mundo 🌎</p>
-  <p>Hoja de Vida de Melany Campo</p>
-</footer>
-
+    <script src="./script.js"></script>
 </body>
 </html>
+
 
 
 
