@@ -128,7 +128,7 @@ body {
     height: 350px;
     border-radius: 50%;
     object-fit: cover;
-    border: 20px solid #71ade6;
+    border: 20px solid #b18cc7;
     margin-bottom: 1rem;
 }
 
@@ -280,5 +280,6 @@ del area de Estudios realizados y experiencia laboral*/
         text-align: center;
     }
 }
+
 
 
